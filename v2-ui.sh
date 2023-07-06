@@ -92,7 +92,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/lemsea/V2RAY-UI/master/v2-ui.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -111,7 +111,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/lemsea/V2RAY-UI/master/v2-ui.sh)
     if [[ $? == 0 ]]; then
         echo -e "${green}更新完成，已自动重启面板${plain}"
         exit
@@ -420,7 +420,7 @@ show_usage() {
 show_menu() {
     echo -e "
   ${green}v2-ui 面板管理脚本${plain} ${red}${version}${plain}
---- https://blog.sprov.xyz/v2-ui ---
+--- HIIIIIIIII ---
   ${green}0.${plain} 退出脚本
 ————————————————
   ${green}1.${plain} 安装 v2-ui
